@@ -210,7 +210,7 @@ body {
 }
 
 .videos__item:hover {
-    transform: scale(1.2);
+    transform: scale(1);
     background-color: var(--branco-claro);
     z-index: 2;
     transition: .5s;
