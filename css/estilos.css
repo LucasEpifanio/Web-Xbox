@@ -1,0 +1,322 @@
+*,
+*::before,
+*::after {
+    --preto-escuro: #1f1f1f;
+    --verde-medio: #107b10;
+    --branco-claro: #ffffff;
+    --cinza-claro: #ECECEC;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+    background-color: var(--branco-claro);
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: auto;
+    font-size: 14px;
+    color: white;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+/* CABEÇALHO */
+
+.cabecalho__container {
+    background-color: #1f1f1f;
+    height: 80px;
+    width: 100%;
+    padding: 0 25px;
+}
+
+.logo__item {
+    background-image: url(../img/cabecalho/Logo\ xbox.png);
+    background-repeat: no-repeat;
+    padding: 17px 65px;
+    cursor: pointer;
+}
+
+.pesquisar__input {
+    width: 265px;
+    height: 29px;
+    border: 1px solid rgb(209, 209, 209);
+    font-size: 16px;
+    padding: 3px 8px;
+    border: 1px solid rgb(51, 171, 35);
+}
+
+.pesquisar__label {
+    background-image: url(../img/cabecalho/search.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    border: 1px solid rgb(51, 171, 35);
+    background-color: #ffffff;
+    border-left: none;
+    padding: 6px 16px 5px 15px;
+    cursor: pointer;
+}
+
+.cabecalho__videos {
+    background-image: url(../img/cabecalho/video_call.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 25px;
+}
+
+.cabecalho__apps {
+    background-image: url(../img/cabecalho/apps.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 13px 30px 13px 13px;
+}
+
+.cabecalho__notificacoes {
+    background-image: url(../img/cabecalho/notifications.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 13px 30px 13px 13px;
+}
+
+.cabecalho__avatar {
+    background-image: url(../img/cabecalho/Avatar.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 13px 30px 13px 13px;
+}
+
+/* MENU LATERAL */
+
+.menu__container {
+    background-color: var(--preto-escuro);
+    font-size: 14px;
+}
+
+.menu__itens:hover {
+    background-color: var(--verde-medio);
+    transition: .5s;
+}
+
+.icone__inicio::before {
+    content: url(../img/menu/home.png);
+}
+
+.icone__explorar::before {
+    content: url(../img/menu/explore.png);
+}
+
+.icone__shorts::before {
+    content: url(../img/menu/shorts.png);
+}
+
+.icone__inscricoes::before {
+    content: url(../img/menu/subscriptions.png);
+}
+
+.icone__biblioteca::before {
+    content: url(../img/menu/video_library.png);
+}
+
+.icone__historico::before {
+    content: url(../img/menu/history.png);
+}
+
+.icone__relogio::before {
+    content: url(../img/menu/history_toggle_off.png);
+}
+
+.icone__like::before {
+    content: url(../img/menu/thumb_up_alt.png);
+}
+
+.icone__Pedro::before {
+    content: url(../img/menu/Avatar_Pedro.png);
+}
+
+.icone__Gabi::before {
+    content: url(../img/menu/Avatar_Gabi.png);
+}
+
+.icone__Rafa::before {
+    content: url(../img/menu/Avatar_Rafa.png);
+}
+
+.icone__Alexandre::before {
+    content: url(../img/menu/Avatar_Alexandre.png);
+}
+
+.icone__Joana::before {
+    content: url(../img/menu/Avatar_Joana.png);
+}
+
+.icone__Michel::before {
+    content: url(../img/menu/Avatar_Michel.png);
+}
+
+.icone__Mariana::before {
+    content: url(../img/menu/Avatar_Mariana.png);
+}
+
+.icone__mostrar::before {
+    content: url(../img/menu/keyboard_arrow_down.png);
+}
+
+.icone__videos::before {
+    content: url(../img/menu/videos.png);
+}
+
+.icone__filmes::before {
+    content: url(../img/menu/filmes.png);
+}
+
+.icone__games::before {
+    content: url(../img/menu/games.png);
+}
+
+/* SECAO SUPERIOR */
+
+.superior__secao__container {
+    height: 63px;
+    color: white;
+    font-size: 16px;
+    background-color: var(--branco-claro);
+    padding: 0 20px;
+    position: fixed;
+    top: 80px;
+    right: 0;
+    left: 0;
+}
+
+.superior__item {
+    color: var(--branco-claro);
+    font-size: 16px;
+    background-color:#1f1f1f;
+    border-radius: 20px;
+    padding: 8px 20px;
+    cursor: pointer;
+}
+
+.superior__item:hover {
+    color: white;
+    background-color: var(--verde-medio);
+    transition: .5s;
+}
+
+/* SEÇÃO VÍDEOS */
+
+.videos__container {
+    color: black;
+    padding: 153px 20px 10px 20px;
+}
+
+.videos__item:hover {
+    transform: scale(1.2);
+    background-color: var(--branco-claro);
+    z-index: 2;
+    transition: .5s;
+}
+
+.descricao-video h3 {
+    font-weight: 700;
+    color: #444444;
+}
+
+.descricao-video p {
+    font-size: 14px;
+    color: #444444;
+}
+
+/* RODAPÉ */
+
+.rodape__container {
+    width: 100%;
+    height: 875px;
+    color: var(--branco-claro);
+    line-height: 1.5;
+    font-size: 16px;
+    background-color:#1f1f1f;
+}
+
+.rodape__titulo {
+    color: var(--verde-medio);
+    font-weight: bold;
+    padding: 10px 0 20px 0;
+}
+
+@media(min-width: 834px) {
+
+    body {
+        height: 100vh;
+    }
+
+    /* ESTILOS DO MENU LATERAL */
+
+    .menu__container {
+        font-size: 16px;
+    }
+
+    .menu__lista {
+        padding-top: 15px;
+    }
+
+    .menu__lista li {
+        width: 100%;
+    }
+
+    /* ESTILOS DA SECAO SUPERIOR */
+
+    .superior__secao__container {
+        border-bottom: var(--preto-escuro) 1px solid;
+        width: auto;
+        left: 82px;
+    }
+
+    /*ESTILOS SEÇÃO VÍDEOS */
+
+    .videos__container {
+        padding-left: 90px;
+        padding-right: 17px;
+    }
+
+    .videos__item:hover {
+        transform: scale(1.3);
+    }
+
+    /* ESTILOS RODAPÉ */
+
+    .rodape__container {
+        height: 420px;
+        padding-left: 74px;
+    }
+
+}
+
+@media(min-width: 1440px) {
+
+    /* SEÇÃO SUPERIOR */
+
+    .superior__secao__container {
+        left: 247px;
+    }
+
+    /* ESTILOS DO MENU LATERAL */
+
+    .menu__lista {
+        border-bottom: 1.5px solid var(--verde-medio);
+    }
+
+    /* ESTILOS VIDEOS */
+
+    .videos__container {
+        padding-right: 10px;
+        padding-left: 248px;
+    }
+
+    /* ESTILOS RODAPÉ */
+
+    .rodape__container {
+        padding-left: 240px;
+        height: 225px;
+    }
+
+}
