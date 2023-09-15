@@ -2,7 +2,7 @@
 
 <hr>
 
-<p align="center">Página inicial e formulário de cadastro de vídeos da XboxPlay, uma plataforma de compartilhamento de vídeos.</p>
+<p align="center">Página inicial e formulário de cadastro de vídeos da XboxPlay Responsive, uma plataforma de compartilhamento de vídeos.</p>
 
 ## Tecnologias utilizadas durante o projeto
 * Javascript
@@ -11,9 +11,11 @@
 * HTML
 * CSS
 
-## Screenshots
+## Screenshots Responsivos
 ![Screenshot da tela inicial do WebXbox](./img/Captura%20de%20tela%202023-09-14%20184829.png)
 ![Screenshot da tela do formulário do WebXbox](./img/Captura%20de%20tela%202023-09-14%20184938.png)
+![Screenshot da tela do formulário do WebXbox](./img/Captura%20de%20tela%202023-09-15%20173213.png)
+![Screenshot da tela do formulário do WebXbox](./img/Captura%20de%20tela%202023-09-15%20173243.png)
 
 ## Para Funcionamento: 
 1- Instalar o Node se não tiver em sua maquina;
