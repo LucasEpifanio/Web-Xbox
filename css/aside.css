@@ -6,7 +6,7 @@
 }
 
 .menu__itens{
-padding: 0.4rem 0.3rem 0.4rem 0.4rem; 
+padding: 0.4rem 0.3rem 0.4rem 0.4rem;
 }
 .menu__itens:hover {
     background-color: var(--verde-medio);
