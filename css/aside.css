@@ -5,6 +5,9 @@
     font-size: 14px;
 }
 
+.menu__itens{
+padding: 0.4rem 0.3rem 0.4rem 0.4rem; 
+}
 .menu__itens:hover {
     background-color: var(--verde-medio);
     transition: .5s;
