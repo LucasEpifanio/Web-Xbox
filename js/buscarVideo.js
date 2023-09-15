@@ -20,6 +20,14 @@ async function buscarVideo(evento) {
     }
 }
 
+const inputSearch = document.getElementById('search');
 const botaoDePesquisa = document.querySelector("[data-botao-pesquisa]");
+
+inputSearch.addEventListener('keydown', function(event) {
+    if (event.key === 'Enter') {
+        event.preventDefault();
+        buscarVideo(event);
+    }
+});
 
 botaoDePesquisa.addEventListener("click", evento => buscarVideo(evento));
