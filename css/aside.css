@@ -1,0 +1,214 @@
+/* MENU LATERAL */
+
+.menu__container {
+    background: var(--preto);
+    font-size: 14px;
+}
+
+.menu__itens:hover {
+    background-color: var(--verde-medio);
+    transition: .5s;
+}
+
+.icone__inicio::before {
+    content: url(../img/menu/home.png);
+}
+
+.icone__explorar::before {
+    content: url(../img/menu/explore.png);
+}
+
+.icone__shorts::before {
+    content: url(../img/menu/shorts.png);
+}
+
+.icone__inscricoes::before {
+    content: url(../img/menu/subscriptions.png);
+}
+
+.icone__biblioteca::before {
+    content: url(../img/menu/video_library.png);
+}
+
+.icone__historico::before {
+    content: url(../img/menu/history.png);
+}
+
+.icone__relogio::before {
+    content: url(../img/menu/history_toggle_off.png);
+}
+
+.icone__like::before {
+    content: url(../img/menu/thumb_up_alt.png);
+}
+
+.icone__Pedro::before {
+    content: url(../img/menu/Avatar_Pedro.png);
+}
+
+.icone__Gabi::before {
+    content: url(../img/menu/Avatar_Gabi.png);
+}
+
+.icone__Rafa::before {
+    content: url(../img/menu/Avatar_Rafa.png);
+}
+
+.icone__Alexandre::before {
+    content: url(../img/menu/Avatar_Alexandre.png);
+}
+
+.icone__Joana::before {
+    content: url(../img/menu/Avatar_Joana.png);
+}
+
+.icone__Michel::before {
+    content: url(../img/menu/Avatar_Michel.png);
+}
+
+.icone__Mariana::before {
+    content: url(../img/menu/Avatar_Mariana.png);
+}
+
+.icone__mostrar::before {
+    content: url(../img/menu/keyboard_arrow_down.png);
+}
+
+.icone__videos::before {
+    content: url(../img/menu/videos.png);
+}
+
+.icone__filmes::before {
+    content: url(../img/menu/filmes.png);
+}
+
+.icone__games::before {
+    content: url(../img/menu/games.png);
+}
+
+.menu__container {
+    position: fixed;
+    bottom: 0%;
+    height: 74px;
+    width: 100%;
+}
+
+.menu__lista {
+    display: flex;
+    justify-content: space-around;
+    height: 100%;
+}
+
+.menu__lista li {
+    align-self: center;
+}
+
+.menu__itens {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.menu__lista:nth-child(2),
+.menu__lista:nth-child(3),
+.menu__lista:nth-child(4) {
+    display: none;
+}
+
+
+/*MENU TABLETS*/
+@media (min-width:834px) {
+
+    .menu__container {
+        left: 0;
+        height: auto;
+        width: 74px;
+        top: 80px;
+    }
+
+    .menu__lista {
+        flex-direction: column;
+        justify-content: flex-start;
+        padding-top: 18px;
+        gap: 33px;
+    }
+}
+
+@media(min-width: 834px) {
+
+    body {
+        height: 100vh;
+    }
+
+    /* ESTILOS DO MENU LATERAL */
+
+    .menu__container {
+        font-size: 16px;
+    }
+
+    .menu__lista {
+        padding-top: 15px;
+    }
+
+    .menu__lista li {
+        width: 100%;
+    }
+
+}
+
+
+@media(min-width: 1200px) {
+
+    .menu__lista {
+        border-bottom: 2px solid var(--verde-medio);
+    }
+
+}
+
+/*NEETBOOK*/
+@media(min-width:1200px){
+
+    .menu__container{
+        width:239px;
+        overflow: scroll;
+    }   
+    
+    .menu__lista:nth-child(2),
+    .menu__lista:nth-child(3),
+    .menu__lista:nth-child(4) {
+        display: flex;
+    }
+    
+    .menu__lista{
+        height: auto;
+        padding:20px 17px 20px 15px;
+        gap: 15px;
+    }
+    
+    .menu__itens{
+        flex-direction: row;
+        gap:15px;
+        align-items: center;
+    }
+    
+    .menu__lista:nth-child(3){
+        flex-direction: column-reverse;
+    }
+    
+    .maispagina{
+        order: 4;
+    }
+    
+    .jogos{
+        order: 3;
+    }
+    
+    .filmes{
+        order: 2;
+    }
+    
+    .premium{
+        order: 1;
+    }
+    
+    }

@@ -1,0 +1,14 @@
+{
+  "name": "layout-web-xbox",
+  "version": "1.0.0",
+  "description": "<p align=\"center\">Site Xbox Play</p>",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "json-server": "^0.17.3"
+  }
+}

@@ -6,9 +6,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/aside.css">
+    <link rel="stylesheet" href="./css/section.css">
+    <link rel="stylesheet" href="./css/videos.css">
+    <link rel="stylesheet" href="./css/footer.css">
     <link rel="stylesheet" href="./css/reset.css">
-    <link rel="stylesheet" href="./css/estilos.css">
-    <link rel="stylesheet" href="./css/flexbox.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/scroll-bar.css">
     <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
     <title>Site Xbox Play</title>
 </head>
@@ -20,20 +25,33 @@
 
         <nav class="cabecalho__container">
 
-            <h1 class="logo__item" href="#"></h1>
-
-            <div class="cabecalho__pesquisar__item">
-                <form action="">
-                    <input type="search" placeholder="Pesquisar" id="pesquisar" class="pesquisar__input">
-                    <label for="pesquisar" class="pesquisar__label"></label>
+            <a href="./index.html"><h1 class="logo__item" alt="Xbox Play" ></h1></a>
+                
+                <form class="form">
+                    <label for="search">
+                        <input class="input" type="text" required="" placeholder="Pesquisar" id="search" data-pesquisa>
+                        <div class="fancy-bg"></div>
+                        <div class="search" data-botao-pesquisa>
+                            <svg viewBox="0 0 24 24" aria-hidden="true" class="r-14j79pv r-4qtqp9 r-yyyyoo r-1xvli5t r-dnmrzs r-4wgw6l r-f727ji r-bnwqim r-1plcrui r-lrvibr">
+                                <g>
+                                    <path d="M21.53 20.47l-3.66-3.66C19.195 15.24 20 13.214 20 11c0-4.97-4.03-9-9-9s-9 4.03-9 9 4.03 9 9 9c2.215 0 4.24-.804 5.808-2.13l3.66 3.66c.147.146.34.22.53.22s.385-.073.53-.22c.295-.293.295-.767.002-1.06zM3.5 11c0-4.135 3.365-7.5 7.5-7.5s7.5 3.365 7.5 7.5-3.365 7.5-7.5 7.5-7.5-3.365-7.5-7.5z"></path>
+                                </g>
+                            </svg>
+                        </div>
+                        <button class="close-btn" type="reset">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                                <path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path>
+                            </svg>
+                        </button>
+                    </label>
                 </form>
-            </div>
+               
 
             <div class="cabecalho__icones__item">
-                <a href="#" class="cabecalho__videos"></a>
+                <a href="./pages/enviar-video.html" class="cabecalho__videos"></a>
                 <a href="#" class="cabecalho__apps"></a>
                 <a href="#" class="cabecalho__notificacoes"></a>
-                <a href="#" class="cabecalho__avatar"></a>
+                <a href="./index.html" class="cabecalho__avatar"></a>
             </div>
 
         </nav>
@@ -45,7 +63,7 @@
     <aside class="menu__container">
         <ul class="menu__lista">
             <li>
-                <a class="menu__itens" href="#">
+                <a class="menu__itens" href="./index.html">
                     <i class="icone__inicio icone-item"></i>
                     <span>Início</span></a>
             </li>
@@ -191,197 +209,22 @@
 
     <!-- Vídeos -->
 
-    <ul class="videos__container">
-        <li class="videos__item">
-            <iframe width="100%" height="72%" src="https://www.youtube.com/embed/Ha_-3ChWCqk"
-                title="YouTube video player" frameborder="0" allow="accelerometer; autoplay;
-             clipboard-write; encrypted-media; gyroscope; 
-            picture-in-picture; web-share" allowfullscreen></iframe>
-            <div class="descricao-video">
-                <img src="./img/videos/elipese xbox.png" alt="Logo do Xbox">
-                <h3>HALO INFINITE Campaign Gameplay Walkthrough FULL GAME No Commentary</h3>
-                <p>1,2mi de visualizações há 1 ano</p>
-            </div>
-        </li>
-        <li class="videos__item">
-            <iframe width="100%" height="72%" src="https://www.youtube.com/embed/1Cpm5Il0XaA"
-                title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; 
-             clipboard-write; encrypted-media; gyroscope; 
-             picture-in-picture; web-share" allowfullscreen></iframe>
-            <div class="descricao-video">
-                <img src="./img/videos/elipese xbox.png" alt="Logo do Xbox">
-                <h3>Star Wars Jedi: Survivor - Official Story Trailer</h3>
-                <p>12 mil visualizações há 8horas</p>
-            </div>
-        </li>
-        <li class="videos__item">
-            <iframe width="100%" height="72%" src="https://www.youtube.com/embed/FYH9n37B7Yw"
-                title="YouTube video player" frameborder="0" allow="accelerometer; autoplay;
-              clipboard-write; encrypted-media; gyroscope; 
-              picture-in-picture; web-share" allowfullscreen></iframe>
-            <div class="descricao-video">
-                <img src="./img/videos/elipese xbox.png" alt="Logo do Xbox">
-                <h3>Forza Horizon 5 Official Announce Trailer</h3>
-                <p>10 mi de visualizações há 1 ano</p>
-            </div>
-        </li>
-        <li class="videos__item">
-            <iframe width="100%" height="72%" src="https://www.youtube.com/embed/Piu13OgW5jg"
-                title="YouTube video player" frameborder="0" allow="accelerometer; autoplay;
-              clipboard-write; encrypted-media; gyroscope;
-               picture-in-picture; web-share" allowfullscreen></iframe>
-            <div class="descricao-video">
-                <img src="./img/videos/elipese xbox.png" alt="Logo do Xbox">
-                <h3>Microsoft Flight Simulator: Famous Flyers #5 - Available now</h3>
-                <p>20 mil visualizações há 1 dia</p>
-            </div>
-        </li>
-        <li class="videos__item">
-            <iframe width="100%" height="72%" src="https://www.youtube.com/embed/NW_wj-MGjoQ"
-                title="YouTube video player" frameborder="0" allow="accelerometer; autoplay;
-              clipboard-write; encrypted-media; gyroscope;
-               picture-in-picture; web-share" allowfullscreen></iframe>
-            <div class="descricao-video">
-                <img src="./img/videos/elipese xbox.png" alt="Logo do Xbox">
-                <h3>Anno 1800 Console - Launch Trailer</h3>
-                <p>19 mil visualizações há 6 dias</p>
-            </div>
-        </li>
-        <li class="videos__item">
-            <iframe width="100%" height="72%" src="https://www.youtube.com/embed/vh042Ym0Af4"
-                title="YouTube video player" frameborder="0" allow="accelerometer; autoplay;
-              clipboard-write; encrypted-media; gyroscope; 
-              picture-in-picture; web-share" allowfullscreen></iframe>
-            <div class="descricao-video">
-                <img src="./img/videos/elipese xbox.png" alt="Logo do Xbox">
-                <h3>Diablo IV | Ultimate Edition Breakdown</h3>
-                <p>30 mil visualizações há 7 dias</p>
-            </div>
-        </li>
-        <li class="videos__item">
-            <iframe width="100%" height="72%" src="https://www.youtube.com/embed/VcP8zkFuLjw"
-                title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; 
-            clipboard-write; encrypted-media; gyroscope; 
-            picture-in-picture; web-share" allowfullscreen></iframe>
-            <div class="descricao-video">
-                <img src="./img/videos/elipese xbox.png" alt="Logo do Xbox">
-                <h3>Season 02 Reloaded | Call of Duty: Modern Warfare II & Warzone 2.0</h3>
-                <p>16 mil visualizações há 8 dias</p>
-            </div>
-        </li>
-        <li class="videos__item">
-            <iframe width="100%" height="72%" src="https://www.youtube.com/embed/327KbO4roBY"
-                title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; 
-            clipboard-write; encrypted-media; gyroscope;
-             picture-in-picture; web-share" allowfullscreen></iframe>
-            <div class="descricao-video">
-                <img src="./img/videos/elipese xbox.png" alt="Logo do Xbox">
-                <h3>The Lord of the Rings: Gollum™ | Story Trailer</h3>
-                <p>60 mil visualizações há 13 dias</p>
-            </div>
-        </li>
-        <li class="videos__item">
-            <iframe width="100%" height="72%" src="https://www.youtube.com/embed/kh-bTv0QK30"
-                title="YouTube video player" frameborder="0" allow="accelerometer; autoplay;
-              clipboard-write; encrypted-media; gyroscope;
-               picture-in-picture; web-share" allowfullscreen></iframe>
-            <div class="descricao-video">
-                <img src="./img/videos/elipese xbox.png" alt="Logo do Xbox">
-                <h3>MLB The Show 23: Xbox Game Pass Early Access Bundle</h3>
-                <p>13 mil visualizações há 3 semanas</p>
-            </div>
-        </li>
-        <li class="videos__item">
-            <iframe width="100%" height="72%" src="https://www.youtube.com/embed/88VqoDdiB98"
-                title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; 
-            clipboard-write; encrypted-media; gyroscope; 
-            picture-in-picture; web-share" allowfullscreen></iframe>
-            <div class="descricao-video">
-                <img src="./img/videos/elipese xbox.png" alt="Logo do Xbox">
-                <h3>Scars Above - Launch Trailer</h3>
-                <p>41 mil visualizações há 3 semanas</p>
-            </div>
-        </li>
-        <li class="videos__item">
-            <iframe width="100%" height="72%" src="https://www.youtube.com/embed/tjTrNG5rTcM"
-                title="YouTube video player" frameborder="0" allow="accelerometer; autoplay;
-             clipboard-write; encrypted-media; gyroscope;
-              picture-in-picture; web-share" allowfullscreen></iframe>
-            <div class="descricao-video">
-                <img src="./img/videos/elipese xbox.png" alt="Logo do Xbox">
-                <h3>Microsoft Flight Simulator: Famous Flyers #4 - Available now</h3>
-                <p>186 mil visualizações há 3 semanas</p>
-            </div>
-        </li>
-        <li class="videos__item">
-            <iframe width="100%" height="72%" src="https://www.youtube.com/embed/bTpMuSLx6Bs"
-                title="YouTube video player" frameborder="0" allow="accelerometer; autoplay;
-              clipboard-write; encrypted-media; gyroscope; 
-              picture-in-picture; web-share" allowfullscreen></iframe>
-            <div class="descricao-video">
-                <img src="./img/videos/elipese xbox.png" alt="Logo do Xbox">
-                <h3>Like a Dragon: Ishin! - Launch Trailer</h3>
-                <p>1,2 mil visualizações - Há 5 dias</p>
-            </div>
-        </li>
-        <li class="videos__item">
-            <iframe width="100%" height="72%" src="https://www.youtube.com/embed/UmOWfH91i7Q"
-                title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; 
-            clipboard-write; encrypted-media; gyroscope; 
-            picture-in-picture; web-share" allowfullscreen></iframe>
-            <div class="descricao-video">
-                <img src="./img/videos/elipese xbox.png" alt="Logo do Xbox">
-                <h3>Lies of P - Official Release Month Trailer</h3>
-                <p>40 mil visualizações há 1 mês</p>
-            </div>
-        </li>
-        <li class="videos__item">
-            <iframe width="100%" height="72%" src="https://www.youtube.com/embed/n5lOHZCRcyg"
-                title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; 
-             clipboard-write; encrypted-media; gyroscope;
-              picture-in-picture; web-share" allowfullscreen></iframe>
-            <div class="descricao-video">
-                <img src="./img/videos/elipese xbox.png" alt="Logo do Xbox">
-                <h3>The Dark Pictures Anthology: The Devil In Me - Friend`s Pass and Curator`s Cut Trailer</h3>
-                <p>10 mil visualizações há 1 mês</p>
-            </div>
-        </li>
-        <li class="videos__item">
-            <iframe width="100%" height="72%" src="https://www.youtube.com/embed/bJtZNISpLhA"
-                title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; 
-             clipboard-write; encrypted-media; 
-             gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-            <div class="descricao-video">
-                <img src="./img/videos/elipese xbox.png" alt="Logo do Xbox">
-                <h3>Maximum Football - Announcement Trailer</h3>
-                <p>45 mil visualizações há 1 mês</p>
-            </div>
-        </li>
-        <li class="videos__item">
-            <iframe width="100%" height="72%" src="https://www.youtube.com/embed/K4-HkFIfV2A"
-                title="YouTube video player" frameborder="0" allow="accelerometer; autoplay;
-              clipboard-write; encrypted-media;
-               gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-            <div class="descricao-video">
-                <img src="./img/videos/elipese xbox.png" alt="Logo do Xbox">
-                <h3>HITMAN World of Assassination - Launch Trailer</h3>
-                <p>48 mil visualizações há 1 mês</p>
-            </div>
-        </li>
+    <ul class="videos__container" data-lista>
     </ul>
 
     <!-- <Seção rodapé> -->
     <footer class="rodape__container">
-        <section>
+        <div class="rodape-conteudo">
+        <ul>
             <h2 class="rodape__titulo">Game Pass</h2>
             <p class="rodape__texto">Descrição geral</p>
             <p>Ver Games</p>
             <p>PC Game Pass</p>
             <p>Xbox Cloud Gaming</p>
             <p>Xbox Live Gold</p>
-        </section>
+        </ul>
 
-        <section>
+        <ul>
             <h2 class="rodape__titulo">Os Games</h2>
             <p class="rodape__texto">Jogos otimizados</p>
             <p>Games Retrocompátiveis</p>
@@ -389,9 +232,9 @@
             <p>Ofertas com Gold</p>
             <p>Resgatar Códigos</p>
             <p>Promoções e Ofertas Especiais</p>
-        </section>
+        </ul>
 
-        <section>
+        <ul>
             <h2 class="rodape__titulo">Dispositivos</h2>
             <p class="rodape__texto">Xbox Consoles</p>
             <p>Xbox Series X</p>
@@ -399,9 +242,9 @@
             <p>Xbox All Access</p>
             <p>Comandos</p>
             <p>Acessórios</p>
-        </section>
+        </ul>
 
-        <section>
+        <ul>
             <h2 class="rodape__titulo">Desenvolvedores</h2>
             <p class="rodape__texto">Centro de Programadores</p>
             <p>Softskills</p>
@@ -409,34 +252,38 @@
             <p>Azure</p>
             <p>AppSource</p>
             <p>Visual Studio</p>
-        </section>
+        </ul>
 
-        <section>
+        <ul>
             <h2 class="rodape__titulo">Comunidade</h2>
             <p class="rodape__texto">Jogos Multijogador</p>
             <p>Hub familiar</p>
             <p>Games acessíveis</p>
             <p>Normas da Comunidade</p>
-        </section>
+        </ul>
 
-        <section>
+        <ul>
             <h2 class="rodape__titulo">Apps e Entretenimento</h2>
             <p class="rodape__texto">App para Dispositivos Moveis</p>
             <p>App para PC com windows</p>
             <p>App para smart TV</p>
             <p>App para Family Settings</p>
-            <p>App de entretenimento para consoles</p>
-        </section>
+            <p>App de entretenimento</p>
+        </ul>
 
-        <section>
+        <ul>
             <h2 class="rodape__titulo">Suporte</h2>
             <p class="rodape__texto">Home do suporte</p>
             <p>Estado do Xbox</p>
             <p>Ajuda</p>
             <p>Games acessíveis</p>
             <p>Atualizações</p>
-        </section>
+        </ul>
+    </div>
     </footer>
+
+    <script src="./js/mostrarVideos.js" type="module"></script>
+    <script src="../js/buscarVideo.js" type="module"></script>
 
 </body>
 

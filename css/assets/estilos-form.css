@@ -1,0 +1,59 @@
+.container {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.container__formulario {
+    margin: 3em 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: initial;
+}
+
+.formulario__campo {
+    margin: 1em;
+    font-size: 1.6em;
+}
+
+.formulario__titulo {
+    color: var(--azul-medio);
+    font-weight: bold;
+    font-size: 2rem;
+    margin-top: 5rem;
+}
+
+.campo__escrita {
+    width: 50vw;
+    border-radius: 1rem;
+    display: block;
+    color: black;
+    padding: 1rem
+}
+
+.campo__etiqueta {
+    line-height: 1.5;
+    font-weight: 700;
+    color: var(--branco-claro);
+}
+
+.formulario__botao {
+    font-size: 1.5rem;
+    padding: 0.5rem 2rem;
+    margin: 1.2rem 0;
+    border-radius: 0.5rem;
+    background-color: var(--verde-medio);
+}
+
+@media (max-width:500px){
+    .campo__escrita {
+        width: 70vw;
+        border-radius: 1rem;
+        display: block;
+        color: black;
+        padding: 1rem
+    }
+}

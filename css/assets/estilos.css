@@ -1,0 +1,41 @@
+*,
+*::before,
+*::after {
+    --preto-claro:#212121;
+    --preto:#070707;
+    --preto-escuro: #1a1a1a;
+    --verde-medio: #107b10;
+    --branco-claro: #ffffff;
+    --cinza-claro: #dfdfdf;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+    background-color: var(--preto-claro);
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: auto;
+    font-size: 14px;
+    color: white;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.mensagem {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.mensagem__imagem {
+    width: 30%;
+}
+
+.mensagem__titulo {
+    color: var(--branco-claro);
+    font-weight: bold;
+    font-size: 2rem;
+}
